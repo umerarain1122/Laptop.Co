@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1 class="logo">Laptop.Co</h1>
+            <button class="menu-button" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                </ul>
+                <button class="search-button" onclick="toggleSearchBar()">
+                    <i class="fas fa-search"></i>
+                </button>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="about">
+            <div class="about-intro">
+                <h2>About Us</h2>
+                <p>We are a leading laptop company dedicated to providing top-quality laptops and exceptional service. Our mission is to innovate and deliver the best technology solutions for our customers.</p>
+            </div>
+            <div class="about-team">
+                <div class="container">
+                    <div class="team-intro">
+                        <h3>Meet Our Team</h3>
+                        <p>Our team consists of highly skilled professionals who are passionate about technology and dedicated to achieving excellence.</p>
+                    </div>
+                    <div class="team-members">
+                        <div class="team-member">
+                            <img src="/assets/images/team-1.jpg" alt="Team Member 1">
+                            <h4>NAME</h4>
+                            <p>CEO & Founder</p>
+                        </div>
+                        <div class="team-member">
+                            <img src="/assets/images/images (7).jfif" alt="Team Member 2">
+                            <h4>NAME</h4>
+                            <p>CTO</p>
+                        </div>
+                        <div class="team-member">
+                            <img src="/assets/images/images (5).jfif" alt="Team Member 3">
+                            <h4>NAME</h4>
+                            <p>Head of Marketing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-history">
+                <div class="container">
+                    <h3>Our History</h3>
+                    <p> our company has been at the forefront of laptop technology. We have continuously evolved to meet the changing needs of our customers and remain committed to excellence.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+  <!--Footer Section -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-logo">
+            <h2>LaptopCo</h2>
+            <p>Your trusted partner for top-quality laptops and accessories.</p>
+        </div>
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html#hero">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="index.html#support">Support</a></li>
+                <li><a href="index.html#contact">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>This wesite is Designed by Muhammad Umer</p>
+    </div>
+</footer>
+<script>
+    function toggleMenu() {
+        document.querySelector('.nav').classList.toggle('active');
+        document.querySelector('.search-bar').classList.remove('visible'); // Hide search bar when menu is toggled
+    }
+
+    function toggleSearchBar() {
+        document.querySelector('.search-bar').classList.toggle('visible');
+        document.querySelector('.nav').classList.remove('active'); // Hide menu when search bar is toggled
+    }
+</script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop.Co</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1 class="logo">Laptop.Co</h1>
+            <button class="menu-button" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                </ul>
+                <button class="search-button" onclick="toggleSearchBar()">
+                    <i class="fas fa-search"></i>
+                </button>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Power Up Your Experience</h1>
+            <a href="products.html" class="cta-button">Discover Our Laptops</a>
+        </div>
+    </section>
+
+  <!--Support Section -->
+<section id="support" class="support-section">
+    <div class="support-content">
+        <h2>Need Help? We're Here for You!</h2>
+        <p>Our support team is available 24/7 to assist you with any queries or issues. Get in touch with us through any of the following channels:</p>
+        <div class="support-cards">
+            <!-- Card 1: -->
+            <div class="support-card">
+                <i class="fas fa-comments support-icon"></i>
+                <h3>Live Chat</h3>
+                <p>Chat with our support agents for immediate assistance.</p>
+                <a href="#" class="support-button">Start Chat</a>
+            </div>
+            <!-- Card 2: -->
+            <div class="support-card">
+                <i class="fas fa-envelope support-icon"></i>
+                <h3>Email Us</h3>
+                <p>Send us an email and we'll get back to you within 24 hours.</p>
+                <a href="mailto:support@laptopco.com" class="support-button">Email Support</a>
+            </div>
+            <!-- Card 3: -->
+            <div class="support-card">
+                <i class="fas fa-phone-alt support-icon"></i>
+                <h3>Call Us</h3>
+                <p>Speak directly to our customer service representative.</p>
+                <a href="tel:+123456789" class="support-button">Call Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <!--Contact Section -->
+<section id="contact" class="contact-section">
+    <div class="contact-content">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! Reach out to us for any inquiries, feedback, or suggestions. Fill out the form below or connect with us through our social media channels.</p>
+        <div class="contact-form-container">
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit" class="contact-button">Send Message</button>
+            </form>
+            <div class="contact-social">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+ <!--Footer Section -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-logo">
+            <h2>LaptopCo</h2>
+            <p>Your trusted partner for top-quality laptops and accessories.</p>
+        </div>
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html#hero">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="index.html#support">Support</a></li>
+                <li><a href="index.html#contact">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>This wesite is Designed by Muhammad Umer</p>
+    </div>
+</footer>
+<script>
+    function toggleMenu() {
+        document.querySelector('.nav').classList.toggle('active');
+        document.querySelector('.search-bar').classList.remove('visible'); // Hide search bar when menu is toggled
+    }
+
+    function toggleSearchBar() {
+        document.querySelector('.search-bar').classList.toggle('visible');
+        document.querySelector('.nav').classList.remove('active'); // Hide menu when search bar is toggled
+    }
+</script>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
